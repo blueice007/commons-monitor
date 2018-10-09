@@ -55,6 +55,11 @@ public class FtpFileScanner implements FileScanner
     {
         this(ftpIp, ftpPort, ftpUser, ftpPwd, path,false);
     }
+    
+    public FtpFileScanner(String ftpIp, String ftpUser, String ftpPwd, String path)
+    {
+        this(ftpIp, 21, ftpUser, ftpPwd, path,false);
+    }
 
     @Override
     public FileEntry scan(FileEntryFilter entryFilters)
@@ -181,5 +186,56 @@ public class FtpFileScanner implements FileScanner
             
         }
     }
+
+    public String getFtpIp()
+    {
+        return ftpIp;
+    }
+
+    public void setFtpIp(String ftpIp)
+    {
+        this.ftpIp = ftpIp;
+    }
+
+    public int getFtpPort()
+    {
+        return ftpPort;
+    }
+
+    public void setFtpPort(int ftpPort)
+    {
+        this.ftpPort = ftpPort;
+    }
+
+    public String getFtpUser()
+    {
+        return ftpUser;
+    }
+
+    public void setFtpUser(String ftpUser)
+    {
+        this.ftpUser = ftpUser;
+    }
+
+    public String getFtpPwd()
+    {
+        return ftpPwd;
+    }
+
+    public void setFtpPwd(String ftpPwd)
+    {
+        this.ftpPwd = ftpPwd;
+    }
+
+    public String getPath()
+    {
+        return path;
+    }
+
+    public void setPath(String path)
+    {
+        this.path = path;
+    }
+    
     
 }
