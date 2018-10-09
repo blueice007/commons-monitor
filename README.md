@@ -1,2 +1,2 @@
 # commons-monitor
-a file-monitor tool
+A file-monitoring tool supporting FTP and local file
