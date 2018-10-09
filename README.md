@@ -1,6 +1,6 @@
 # commons-monitor
 A file-monitoring tool supporting FTP and local file
- 该组件有2个features：
+## 该组件有2个features：
 * 组件是基于事件的，通过自定义文件listenner(实现FileEventListenner接口) 来响应监听目标目录中文件以及子目录的新增、删除、修改等事件；
 * 支持对本地文件目录的监听，同时也支持对远程ftp目录的监听，当然也可以自定义FileScanner实现来监听特定的文件对象
 
