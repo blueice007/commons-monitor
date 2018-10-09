@@ -57,6 +57,9 @@ public class FileEventMonitor extends ReentrantLock implements Runnable
     
     public void shutdown(){
         this.lock();
+        if (!running) {
+            throw new IllegalStateException("Monitor is not running");
+        }
         try{
             running = false;
             thread.join(interval);
@@ -69,10 +72,10 @@ public class FileEventMonitor extends ReentrantLock implements Runnable
     
     public void startup(){
         this.lock();
+        if(running){
+            throw new IllegalStateException("The Monitor is already running!");
+        }
         try{
-            if(running){
-                throw new IllegalStateException("The Monitor is already running!");
-            }
             for(FileEventSource source:sources){
                 source.initialize();
             }

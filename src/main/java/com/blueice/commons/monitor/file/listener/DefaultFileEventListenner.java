@@ -44,13 +44,13 @@ public class DefaultFileEventListenner extends AbstractFileEventListener
     @Override
     public void onStart()
     {
-        //System.out.println("onstart:"+System.currentTimeMillis());
+        System.out.println("onstart:"+System.currentTimeMillis());
     }
 
     @Override
     public void onFinish()
     {
-        //System.out.println("onfinish:"+System.currentTimeMillis());
+        System.out.println("onfinish:"+System.currentTimeMillis());
     }
     
 }
