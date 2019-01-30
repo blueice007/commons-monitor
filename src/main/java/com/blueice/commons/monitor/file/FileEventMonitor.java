@@ -111,7 +111,6 @@ public class FileEventMonitor extends ReentrantLock implements Runnable
     {
         return sources;
     }
-
     public int getInterval()
     {
         return interval;
