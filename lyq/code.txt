@@ -1,1 +1,2 @@
 lyq starting
+print "finish function1"
