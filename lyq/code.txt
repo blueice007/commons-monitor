@@ -1,2 +1,2 @@
 lyq starting
-print "finish lyq function1,release need modify"
+print "finish lyq functionXX,release need modify"
