@@ -1,1 +1,2 @@
 hzz code start
+print "finish function1"
